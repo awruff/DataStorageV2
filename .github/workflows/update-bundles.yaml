@@ -1,0 +1,31 @@
+name: "Update Bundles"
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  UpdateBundles:
+    name: Update packwiz sources to latest stable
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v4
+
+      - name: Update bundles
+        run: |
+          chmod +x ./scripts/*.sh
+          ./scripts/update-bundles.sh
+
+      # Only the packwiz source (.mrpacks) is committed. Pushing to main triggers
+      # the Deploy workflow, which regenerates the bundles onto the gh-pages branch.
+      - name: Commit and push updated sources
+        run: |
+          git config --global user.name "Bundle Updater[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/oneclient/bundles/.mrpacks
+          git commit -m "chore(update-bundles)" || echo "No changes to commit"
+          git push

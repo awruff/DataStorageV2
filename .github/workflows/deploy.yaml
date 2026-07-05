@@ -1,0 +1,57 @@
+name: "Deploy"
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - data/**
+      - scripts/**
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy-pages
+  cancel-in-progress: true
+
+jobs:
+  Deploy:
+    name: Generate bundles and deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
+
+      - name: Install node dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Check bundles
+        run: pnpm check
+
+      - name: Generate bundles
+        run: |
+          chmod +x ./scripts/*.sh
+          ./scripts/generate-bundles.sh
+
+      - name: Build site
+        run: ./scripts/build-site.sh
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
+          force_orphan: true
+          user_name: "Bundle Updater[bot]"
+          user_email: "41898282+github-actions[bot]@users.noreply.github.com"

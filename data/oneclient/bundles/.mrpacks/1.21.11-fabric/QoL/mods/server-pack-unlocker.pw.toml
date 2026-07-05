@@ -1,0 +1,16 @@
+id = "PiuygVWJ"
+enabled = true
+hidden = false
+name = "Server Pack Unlocker"
+filename = "spu-1.9+1.20.3.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/PiuygVWJ/versions/53Zd09Ka/spu-1.9%2B1.20.3.jar"
+hash-format = "sha512"
+hash = "5ae4a20710b469a2bb829ca1b38d61eb48b866794ec2504170330ab66cec4a49f096421ad2951b0361324fc6045709f54a47f4f6887c0b6025273285f0c65da6"
+
+[update]
+[update.modrinth]
+mod-id = "PiuygVWJ"
+version = "53Zd09Ka"

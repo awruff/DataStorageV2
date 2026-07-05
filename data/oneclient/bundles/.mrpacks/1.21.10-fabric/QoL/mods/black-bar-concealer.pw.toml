@@ -1,0 +1,16 @@
+id = "OpQzuo63"
+enabled = true
+hidden = false
+name = "Black Bar Concealer"
+filename = "blackbarconcealer-1.0.6.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/OpQzuo63/versions/EPTeLwSl/blackbarconcealer-1.0.6.jar"
+hash-format = "sha512"
+hash = "177b2971c1c1ebe61eb91cee388f408c207d2b30434fcdea1e4a702a21f9320a108acdfca758a6e63236a5eb726f124dd4e5f9745d02cf15d6a9230529af2ccc"
+
+[update]
+[update.modrinth]
+mod-id = "OpQzuo63"
+version = "EPTeLwSl"
