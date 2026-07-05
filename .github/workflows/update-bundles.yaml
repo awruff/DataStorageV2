@@ -21,7 +21,7 @@ jobs:
           ./scripts/update-bundles.sh
 
       # Only the packwiz source (.mrpacks) is committed. Pushing to main triggers
-      # the Deploy workflow, which regenerates the bundles onto the gh-pages branch.
+      # the Deploy workflow, which regenerates the bundles and publishes to GitHub Pages.
       - name: Commit and push updated sources
         run: |
           git config --global user.name "Bundle Updater[bot]"

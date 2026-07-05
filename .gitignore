@@ -1,4 +1,4 @@
 node_modules/
 
-# GitHub Pages build output (assembled in CI, deployed to the gh-pages branch)
+# GitHub Pages build output (assembled in CI, deployed via GitHub Actions)
 _site/
