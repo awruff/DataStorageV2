@@ -1,30 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = "animatium_utility.json"
-hash = "013bb87a1d68fdba744417b9591ed98e5e4c21c131868525967bca5e3a152c37"
-
-[[files]]
-file = "config/animatium.json"
-hash = "d89b7ae345905cbad1bea445648c6812de635e69ce6d74d76b3ee9a5e0ebc683"
-
-[[files]]
-file = "config/customscoreboard/config.jsonc"
-hash = "7bef58b3bb4952056ca1690c82a072b3cc1acc23a9b309bfe607abc525947dd0"
-
-[[files]]
-file = "config/one-click-join"
-hash = "824b9b328245c5e74d87380a1e41c2a20f206b20f3144cd5551c4fabcfd0a55c"
-
-[[files]]
-file = "config/skyhanni/config.json"
-hash = "0e9ea478eac394baa8ba87fa528bdcd9e13f2d0cbde05514793a34b523e2c252"
-
-[[files]]
-file = "data/fabric_default_resource_packs.json"
-hash = "30a0b4f6b3ebc10d2a515b774ba51f3f2dd14e9bf40fca835c8c133640493312"
-
-[[files]]
 file = "mods/badoptimizations.pw.toml"
 hash = "1e8673ac87db89b84cb1bb8712cb403899f2dc3d9ec69c84167966350c6400ad"
 metafile = true
@@ -213,11 +189,3 @@ metafile = true
 file = "mods/yacl.pw.toml"
 hash = "1765c84b093eba73f278a6f7af45f722445f35f08f8f9c103e6df42c28446f8e"
 metafile = true
-
-[[files]]
-file = "options.txt"
-hash = "c92d81c1716ba82e7a4bcf3f5067aeb0b5c5cb5e5cb76fd9997a563c9fda9131"
-
-[[files]]
-file = "servers.dat"
-hash = "25e4bb9dbb4a7f0438311c03598d5c42c9256ae5e9c39af532f39712cd05b2c1"
