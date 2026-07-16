@@ -17,14 +17,15 @@
                     "name": "The Copper Age",
                     "art": "/oneclient/versions/art/Copper_Age.jpg",
                     "loader": "fabric",
-                    "tags": ["PvP", "SkyBlock", "Survival"]
+                    "tags": ["PvP", "Survival"]
                 },
                 {
                     "minor_version": 11,
                     "name": "Mounts of Mayhem",
                     "art": "/oneclient/versions/art/Mounts_Mayhem.jpg",
                     "loader": "fabric",
-                    "tags": ["PvP", "SkyBlock", "Survival"]
+                    "tags": ["PvP", "SkyBlock", "Survival"],
+                    "predownload": true
                 }
             ]
         },
@@ -34,6 +35,7 @@
             "art": "/oneclient/versions/art/Tiny_Takeover.jpg",
             "long_description": "Minecraft's 26.x updates, starting with the release of \"Tiny Takeover\", primarily focuses on mob charm and quality-of-life improvements, overhauling textures and models for every baby mob that previously lacked a unique model. It also features the golden dandelion, nametag crafting, and other gameplay enhancements.",
             "tags": ["Tiny Takeover"],
+            "predownload": true,
             "entries": [
                 {
                     "minor_version": 1,
