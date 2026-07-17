@@ -51,11 +51,6 @@ hash = "bf3aa52ba253ef4fe155f52f220502db9097cbba6b534de9847ae32327d8dd0e"
 metafile = true
 
 [[files]]
-file = "mods/crash-assistant.pw.toml"
-hash = "5c9a92fa3e8e863305c48e8644a27e78bf339dfa25b7c1c64cb72ce98ab2ad71"
-metafile = true
-
-[[files]]
 file = "mods/crashpatch.pw.toml"
 hash = "458d7e1f052c0aaa2dfa4848b4ea9b666723dfa65eb3718b21acfbb274cefbbf"
 metafile = true
