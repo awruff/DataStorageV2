@@ -52,7 +52,7 @@ metafile = true
 
 [[files]]
 file = "mods/crashpatch.pw.toml"
-hash = "88086a7183257df40939d26fc0484ad6069d3d72a50ec128df56eb80293000ba"
+hash = "331cb82549816f5aa3dc1bf3fbf8d7dd7629b545288a38faa87deb5d4fc46c2b"
 metafile = true
 
 [[files]]
@@ -132,7 +132,7 @@ metafile = true
 
 [[files]]
 file = "mods/polysprint.pw.toml"
-hash = "fa7216a9cd861066b261bf20f224896b64d311e5a6772214faac738643f43cf5"
+hash = "0e7b6c98e5c6d0f26504b4e5edd8e9414eb79dba222c22a059ae35d3c77766e4"
 metafile = true
 
 [[files]]
